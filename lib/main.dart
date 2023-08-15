@@ -37,56 +37,50 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     letterSpacing: 2.5),
               ),
-              Container(
+              SizedBox(
+                  height: 20.0,
+                  width: 300.0,
+                  child: Divider(
+                    color: Colors.blueGrey[200],
+                  )),
+              const Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
-                padding: EdgeInsets.all(10.0),
-                child: const Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      size: 25.0,
-                      color: Colors.redAccent,
-                    ),
-                    SizedBox(
-                      width: 80.0,
-                    ),
-                    Text(
-                      '+55 61 9 9371-2250',
-                      style: TextStyle(
-                          color: Colors.blueGrey,
-                          fontFamily: 'Source',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 15.0,
-                          letterSpacing: 0.75),
-                    ),
-                  ],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    size: 25.0,
+                    color: Colors.redAccent,
+                  ),
+                  title: Text(
+                    '+55 61 9 9371-2250',
+                    style: TextStyle(
+                        color: Colors.blueGrey,
+                        fontFamily: 'Source',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15.0,
+                        letterSpacing: 0.75),
+                  ),
                 ),
               ),
-              Container(
+              const Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(horizontal: 20.0),
-                padding: EdgeInsets.all(10.0),
-                child: const Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      size: 25.0,
-                      color: Colors.redAccent,
-                    ),
-                    SizedBox(
-                      width: 60.0,
-                    ),
-                    Text(
-                      'dario.matheus97@gmail.com',
-                      style: TextStyle(
-                          color: Colors.blueGrey,
-                          fontFamily: 'Source',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 15.0,
-                          letterSpacing: 1.0),
-                    ),
-                  ],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    size: 25.0,
+                    color: Colors.redAccent,
+                  ),
+                  title: Text(
+                    'dario.matheus97@gmail.com',
+                    style: TextStyle(
+                        color: Colors.blueGrey,
+                        fontFamily: 'Source',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15.0,
+                        letterSpacing: 1.0),
+                  ),
                 ),
               ),
             ],
